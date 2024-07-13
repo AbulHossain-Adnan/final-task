@@ -1,6 +1,6 @@
 # Laravel Application
 
-This project uses Laravel 10.10 and PHP 8.1, along with key packages like Sanctum, UI, Spatie packages, and Stripe for payments.
+This project uses Laravel 10.10 and PHP 8.1, along with key packages like UI and Stripe for payments.
 
 ## Prerequisites
 
@@ -15,13 +15,10 @@ This project uses Laravel 10.10 and PHP 8.1, along with key packages like Sanctu
    cd your-repo-name
 Install Dependencies
 
-sh
-
 composer install
 
 Set Up Environment
 
-sh
 
 cp .env.example .env
 php artisan key:generate
@@ -30,20 +27,13 @@ Configure your .env file with database and other settings.
 
 Run Migrations
 
-sh
 
 php artisan migrate
 
 Install Frontend Dependencies
 
-sh
-
-npm install
-npm run dev
 
 Start the Server
-
-sh
 
     php artisan serve
 
@@ -59,8 +49,3 @@ Packages Included
     Spatie Laravel Permission ^5.11
     Stripe PHP ^15.2
 
-Running Tests
-
-sh
-
-php artisan test
