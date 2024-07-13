@@ -1,0 +1,560 @@
+/* Dashboard Rtl Css */
+
+.customization {
+    right: auto;
+    left: -300px;
+}
+.customization.show {
+    right: auto;
+    left: 0px;
+}
+.customization__icon {
+    left: auto;
+    right: -50px;
+}
+@media only screen and (max-width: 375px) {
+    .customization {
+        left: -270px;
+    }
+    .customization__icon {
+        right: -40px;
+    }
+}
+.dashboard__left {
+    border-right: 0;
+    border-left: 1px solid var(--border-color);
+}
+@media only screen and (min-width: 992px) {
+    .dashboard__right {
+        margin-left: 0;
+        margin-right: 260px;
+    }
+    .icon__view .dashboard__left {
+        left: auto;
+        right: 0;
+    }
+    .icon__view .dashboard__right {
+        margin-left: 0px;
+        margin-right: 100px;
+    }
+    .icon__view .dashboard__bottom__list__item .submenu {
+        left: auto;
+        right: 100%;
+    }
+    .icon__view .dashboard__bottom__list__item.has-children > a::after {
+        right: auto;
+        left: 0;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+@media screen and (min-width: 100px) and (max-width: 991.98px) {
+    .dashboard__left {
+        left: auto;
+        right: -100%;
+    }
+    .dashboard__left.active {
+        left: auto;
+        right: 0;
+    }
+    .dashboard__left__close {
+        right: auto;
+        left: 0;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .dashboard__header__notification__wrap {
+        -webkit-transform: translateX(-25%);
+        transform: translateX(-25%);
+    }
+    .recent_activities .dashboard__recentActivities.showActivity {
+        top: 0 !important;
+        position: fixed !important;
+        left: 0;
+        right: 0;
+        height: calc(100vh - 10px);
+        width: calc(100vw - 48px);
+    }
+}
+
+.dashboard__bottom__list__item.has-children > a::after {
+    right: auto;
+    left: 12px;
+}
+.dashboard__bottom__list__item > .submenu {
+    padding: 12px 12px 0px 0px;
+}
+.dashboard__bottom__list__item > .submenu .dashboard__bottom__list__item a {
+    border-left: none;
+    border-right: 5px solid var(--border-color);
+}
+.dashboard__bottom__list__item > .submenu .dashboard__bottom__list__item a::before {
+    left: auto;
+    right: -5px;
+}
+.dashboard__header__author__wrapper {
+    right: auto;
+    left: 0;
+}
+
+.dashboard__header__notification__wrap {
+    right: auto;
+    left: 0;
+}
+.recent_activities .dashboard__recentActivities {
+    position: absolute !important;
+    border: 1px solid var(--border-color);
+    right: auto;
+    left: 0;
+    top: -100%;
+    width: 250px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
+    display: none;
+    z-index: 2;
+    -webkit-transform: 3s;
+    transform: 3s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.custom_table tbody tr td:not(:last-child) {
+    border-right: 0;
+}
+.custom_table tbody tr td:not(:last-child) {
+    border-left: 1px solid var(--border-color);
+}
+
+.editToDo__contents {
+    right: auto;
+    left: -100%;
+}
+
+.editToDo__contents.show {
+    right: auto;
+    left: 0;
+}
+
+.editToDo__contents__close {
+    right: auto;
+    left: 0;
+}
+.editMeeting__contents {
+    right: auto;
+    left: -100%;
+}
+
+.editMeeting__contents.show {
+    right: auto;
+    left: 0;
+}
+
+.editMeeting__contents__close {
+    right: auto;
+    left: 0;
+}
+
+.dashboard_checkBox__label {
+    text-align: right;
+}
+
+.dashboard__meeting__item__attendes__author__item:not(:first-child) {
+    margin-left: 0;
+    margin-right: -5px;
+}
+
+.dashboard__task__item:nth-child(2n+1)::before {
+    right: auto;
+    left: -12px;
+}
+
+.dashboard__attendance__author__checking__item:not(:last-child) {
+    padding-left: 20px;
+    margin-left: 20px;
+}
+.dashboard__attendance__author__checking__item:not(:last-child)::before {
+    right: auto;
+    left: 0;
+}
+
+.dashboard_posSystem__category__menu {
+    left: auto;
+    right: 0;
+}
+
+.btn-close.btn_closeCustom {
+    margin-left: 0;
+}
+
+.dashboard_posSystem__category__nav__item:not(:last-child) {
+    padding-right: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    margin-left: 15px;
+}
+
+.dashboard_posSystem__category__nav__item:not(:last-child)::after {
+    right: auto;
+    left: -4px;
+}
+
+.dashboard__branches__address__item:not(:last-child) {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.dashboard__branches__address__item:not(:first-child) {
+    padding-left: 0;
+    padding-right: 15px;
+}
+
+.dashboard__branches__address__item:not(:first-child)::after {
+    left: auto;
+    right: 0;
+}
+
+.chat_wrapper__details__inner__chat.chat-reply .chat_wrapper__details__inner__chat__contents {
+    text-align: left;
+}
+
+.chat_wrapper__details__inner__chat.chat-reply .chat_wrapper__details__inner__chat__contents__time {
+    text-align: left;
+}
+
+.inbox__read__messageName {
+    text-align: left;
+}
+.include_icon .icon,
+.custom_form .single_input .include_icon .icon, 
+.custom_form .form-group .include_icon .icon {
+    left: auto;
+    right: 15px;
+}
+
+.custom_form .single_input .include_icon.left__padding .form-control, 
+.custom_form .single_input .include_icon.left__padding .form--control, 
+.custom_form .single_input .include_icon.left__padding .form_control, 
+.custom_form .single_input .include_icon.left__padding .form__control, 
+.custom_form .form-group .include_icon.left__padding .form-control, 
+.custom_form .form-group .include_icon.left__padding .form--control, 
+.custom_form .form-group .include_icon.left__padding .form_control, 
+.custom_form .form-group .include_icon.left__padding .form__control {
+    padding-right: 45px;
+}
+
+.custom_form .single_input .include_icon.right__padding .form-control, 
+.custom_form .single_input .include_icon.right__padding .form--control, 
+.custom_form .single_input .include_icon.right__padding .form_control, 
+.custom_form .single_input .include_icon.right__padding .form__control, 
+.custom_form .form-group .include_icon.right__padding .form-control, 
+.custom_form .form-group .include_icon.right__padding .form--control, 
+.custom_form .form-group .include_icon.right__padding .form_control, 
+.custom_form .form-group .include_icon.right__padding .form__control {
+    padding-left: 45px;
+}
+.form__input__single__item.right__padding .form-control, 
+.form__input__single__item.right__padding .form--control, 
+.form__input__single__item.right__padding .form_control, 
+.form__input__single__item.right__padding .form__control {
+    padding-left: 40px;
+}
+.form__input__single__item.left__padding .form-control, 
+.form__input__single__item.left__padding .form--control, 
+.form__input__single__item.left__padding .form_control, 
+.form__input__single__item.left__padding .form__control {
+    padding-right: 40px;
+}
+.form__input__single__item .input__icon {
+    left: auto;
+    right: 15px;
+}
+.toggle_password {
+    right: auto;
+    left: 15px;
+}
+.porduct_search__input {
+    padding-left: 0px;
+    padding-right: 40px;
+}
+
+.porduct_search__icon {
+    left: auto;
+    right: 10px;
+}
+
+.search_filter__contents {
+    right: auto;
+    left: 0;
+}
+.dashboard_orderDetails__inner__item__count__item:not(:last-child) {
+    margin-right: 0px;
+    margin-left: 20px;
+}
+.dashboard_orderDetails__inner__item__count__item:not(:first-child) {
+    padding-left: 0px;
+    padding-right: 20px;
+}
+
+.dashboard_orderDetails__inner__item__count__item:not(:first-child)::before {
+    left: auto;
+    right: 0;
+}
+
+.apexcharts-legend-marker {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.select2-container .select2-selection--single .select2-selection__arrow {
+    right: auto;
+    left: 6px;
+}
+
+.toast-top-right {
+    top: 12px;
+    right: auto;
+    left: 12px;
+    text-align: left;
+}
+
+.mapael .map .plot + text {
+    text-anchor: end !important;
+}
+
+.mapael .map .plot + text[text-anchor="end"] {
+    text-anchor: start !important;
+}
+.note-modal-header button.close {
+    float: left;
+}
+.collapse_wrapper.style_ten .accordion-button,
+.collapse_wrapper.style_nine .accordion-button,
+.collapse_wrapper.style_eight .accordion-button,
+.collapse_wrapper.style_seven .accordion-button,
+.collapse_wrapper.style_six .accordion-button,
+.collapse_wrapper.style_five .accordion-button,
+.collapse_wrapper.style_four .accordion-button,
+.collapse_wrapper.style_three .accordion-button,
+.collapse_wrapper.style_two .accordion-button,
+.collapse_wrapper.style_one .accordion-button {
+    text-align: right;
+    padding: 16px 16px 16px 50px;
+}
+.collapse_wrapper.style_ten .accordion-button::after,
+.collapse_wrapper.style_nine .accordion-button::after,
+.collapse_wrapper.style_eight .accordion-button::after,
+.collapse_wrapper.style_seven .accordion-button::after,
+.collapse_wrapper.style_six .accordion-button::after,
+.collapse_wrapper.style_five .accordion-button::after,
+.collapse_wrapper.style_four .accordion-button::after,
+.collapse_wrapper.style_three .accordion-button::after,
+.collapse_wrapper.style_two .accordion-button::after,
+.collapse_wrapper.style_one .accordion-button::after {
+    right: auto;
+    left: 18px;
+}
+.tab_wrapper.style_five .nav-tabs .nav-link {
+    border-right: 0;
+    border-left: 1px solid var(--main-color-one);
+}
+.border_left_blue {
+    border-left: 0;
+    border-right: 3px solid var(--blue);
+}
+.border_left_orange {
+    border-left: 0;
+    border-right: 3px solid var(--orange);
+}
+.border_left_success {
+    border-left: 0;
+    border-right: 3px solid var(--success);
+}
+.border_left_danger {
+    border-left: 0;
+    border-right: 3px solid var(--danger);
+}
+.border_left_warning {
+    border-left: 0;
+    border-right: 3px solid var(--warning);
+}
+.border_left_info {
+    border-left: 0;
+    border-right: 3px solid var(--info);
+}
+
+.alert_dismissible .btn-close {
+    right: auto;
+    left: 0;
+}
+
+.alert svg.me-2 {
+    margin-left: .5rem !important;
+    margin-right: 0 !important;
+}
+
+.radio_btn input[type=radio] + .radio-label:before {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+.radio_wrap.style_two svg {
+    margin-right: 0;
+    margin-left: 7px;
+}
+
+.radio_wrap.style_one input[type=radio]:checked + label, .radio_wrap.style_one input[type=radio]:not(:checked) + label {
+    padding-left: 0;
+    padding-right: 28px;
+}
+
+.radio_wrap.style_one input[type=radio]:checked + label:before, .radio_wrap.style_one input[type=radio]:not(:checked) + label:before {
+    left: auto;
+    right: 0;
+}
+.radio_wrap.style_one input[type=radio]:checked + label:after, .radio_wrap.style_one input[type=radio]:not(:checked) + label:after {
+    left: auto;
+    right: 4px;
+}
+
+.check_wrap.style_3 input[type=checkbox] + label:after {
+    left: auto;
+    right: -13px;
+}
+
+.check_wrap.style_6 input[type=checkbox] + label:after {
+    top: 12px;
+    left: auto;
+    right: 0px;
+}
+
+.check_wrap.style_5 input[type=checkbox] + label:after {
+    top: 12px;
+    left: auto;
+    right: 0;
+}
+
+.check_wrap.style_4 input[type=checkbox] + label:after {
+    top: 11px;
+    left: auto;
+    right: 0;
+}
+
+.switch_box.style_8 input:checked + label:after {
+    left: 40px;
+    margin-top: 0px;
+}
+.switch_box.style_10 label .check:before, .switch_box.style_10 label .check:after {
+    top: 0;
+    left: 0;
+}
+
+.dropdown_wrapper.style_nine .dropdown-menu li .dropdown-item,
+.dropdown_wrapper.style_eight .dropdown-menu li .dropdown-item,
+.dropdown_wrapper.style_seven .dropdown-menu li .dropdown-item,
+.dropdown_wrapper.style_six .dropdown-menu li .dropdown-item,
+.dropdown_wrapper.style_five .dropdown-menu li .dropdown-item,
+.dropdown_wrapper.style_four .dropdown-menu li .dropdown-item,
+.dropdown_wrapper.style_three .dropdown-menu li .dropdown-item,
+.dropdown_wrapper.style_two .dropdown-menu li .dropdown-item,
+.dropdown_wrapper.style_one .dropdown-menu li .dropdown-item {
+    text-align: right;
+}
+
+.userListing .listItem {
+    margin-right: 0;
+    margin-left: -10px;
+}
+
+.tableStyle_four table tbody td img {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.dashboard__countrySelect__multiple .jdropdown .jdropdown-container-header::after {
+    right: auto;
+    left: 10px;
+}
+.dashboard__countrySelect__multiple .jdropdown .jdropdown-container-header .jdropdown-header {
+    max-width: 100%;
+}
+.jdropdown-image {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.loginForm__wrapper .single_input, .loginForm__wrapper .label_title {
+    text-align: right;
+}
+
+.inventory_modal__details__item:not(:first-child) {
+    padding-left: 0;
+    padding-right: 24px;
+}
+.inventory_modal__details__item:not(:last-child) {
+    margin-right: 0;
+    margin-left: 24px;
+}
+.inventory_modal__details__item:not(:first-child)::before {
+    left: auto;
+    right: 0;
+}
+@media screen and (min-width: 1400px) and (max-width: 1599.98px) {
+    .inventory_modal__details__item:not(:first-child) {
+        padding-left: 0;
+        padding-right: 20px;
+    }
+    .inventory_modal__details__item:not(:last-child) {
+        margin-right: 0;
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+    .inventory_modal__details__item:not(:first-child) {
+        padding-left: 0;
+        padding-right: 15px;
+    }
+    .inventory_modal__details__item:not(:last-child) {
+        margin-right: 0;
+        margin-left: 15px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .inventory_modal__details__item:not(:first-child) {
+        padding-left: 0;
+        padding-right: 10px;
+    }
+    .inventory_modal__details__item:not(:last-child) {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+}
+@media only screen and (max-width: 991.98px) {
+    .inventory_modal__details__item:not(:first-child) {
+        padding-left: 0;
+        padding-right: 10px;
+    }
+    .inventory_modal__details__item:not(:last-child) {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .search_filter__contents {
+        left: auto;
+        right: 0;
+    }
+}
+
+.invoice_wrapper .invoice_productSubtotal tr td {
+    text-align: right;
+}
+
+.invoice_wrapper .invoice_productSubtotal tr td:last-child {
+    text-align: left;
+}
+
+.dashboard__pagination .page-item:first-child .page-link {
+    border-radius: 0 7px 7px 0;
+}
+
+.dashboard__pagination .page-item:last-child .page-link {
+    border-radius: 7px 0 0 7px;
+}

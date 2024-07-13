@@ -1,0 +1,69 @@
+.inner-search-wrapper {
+    display: flex;
+    margin-bottom: 60px;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.inner-search-wrapper .form-group input,.inner-search-wrapper .form-group select {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.inner-search-wrapper .form-group {
+    width: calc(100% / 5 - 10px);
+}
+
+.inner-search-wrapper .form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+.userInfo .userImg img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+@media only screen and (max-width: 768px){
+    .inner-search-wrapper {
+        display: block;
+    }
+
+    .inner-search-wrapper .form-group {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+
+.custom_form.loginForm .cmn_btn:hover {
+    color: #fff;
+}
+
+.cmn_btn.btn-sm {
+    padding: 10px 15px;
+}
+.cmn_btn.btn-xs {
+    padding: 8px 12px;
+}
+.alert.sm {
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.custom__dropdown .dropdown-menu li .dropdown-item {
+    cursor: pointer;
+}
+/*.dashboard__bottom__list__item.has-children.active .submenu {*/
+/*    display: block;*/
+/*}*/

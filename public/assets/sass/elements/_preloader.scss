@@ -1,0 +1,80 @@
+/*-------------------------
+    ## Preloader Css
+---------------------------*/
+
+.preloader {
+    background-color: var(--main-color-one);
+    height: 100vh;
+    width: 100vw;
+    &__inner {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 99999;
+        background-color: var(--main-color-one);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .line {
+            background-color: #fff;
+            width: 7px;
+            height: 40px;
+            margin: 0px 5px;
+            border: none;
+            animation: lineSize 1.2s linear infinite;
+            border-radius: 20px;
+            &__1 {
+                animation-delay: 0.80s;
+            }
+            &__2 {
+                animation-delay: 0.40s;
+            }
+            &__3 {
+                animation-delay: 0s;
+            }
+            &__4 {
+                animation-delay: 0.40s;
+            }
+            &__5 {
+                animation-delay: 0.80s;
+            }
+        }
+        
+    }
+}
+
+// .nightMode {
+//     .preloader {
+//         background-color: var(--main-color-one);
+//         &__inner {
+//             background-color: var(--main-color-one);
+//         }
+//     }
+//     .line {
+//         background-color: #111;
+
+//     }
+// }
+
+
+
+
+@keyframes lineSize {
+    0% {
+        height: 40px;
+    }
+    25% {
+        height: 60px;
+    }
+    50% {
+        height: 80px;
+    }
+    75% {
+        height: 60px;
+    }
+    100% {
+        height: 40px;
+    }
+}

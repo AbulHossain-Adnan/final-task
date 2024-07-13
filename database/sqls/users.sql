@@ -1,0 +1,2 @@
+insert into public.users (id, name, email, email_verified_at, password, remember_token, created_at, updated_at, shopify_grandfathered, shopify_namespace, shopify_freemium, plan_id, deleted_at, password_updated_at, theme_support_level, force_scope_update, is_run_first_job)
+values  (1, 'report-genix.myshopify.com', 'shop@report-genix.myshopify.com', null, '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', null, '2024-03-11 11:34:38', '2024-03-30 12:28:17', false, null, false, 3, null, '2024-03-30', 2, false, true);

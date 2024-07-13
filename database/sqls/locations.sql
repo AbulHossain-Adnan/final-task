@@ -1,0 +1,4 @@
+insert into public.locations (id, shopify_id, location_id, active, address1, address2, city, country, country_code, legacy, name, phone, province, province_code, zip, localized_country_name, localized_province_name, created_at, updated_at)
+values  (130, 1, 72526463193, null, '123 Main St', null, 'Toronto', 'CA', 'CA', false, 'My Custom Location', '555-5555', 'Ontario', 'ON', 'A1A 1A1', 'Canada', 'Ontario', '2023-12-04 02:26:16', '2023-12-04 02:26:17'),
+        (131, 1, 72526430425, null, null, null, null, 'BD', 'BD', false, 'Shop location', null, null, null, null, 'Bangladesh', null, '2023-12-04 02:26:04', '2023-12-04 02:26:04'),
+        (132, 1, 72526495961, null, null, null, null, 'BD', 'BD', true, 'Snow City Warehouse', null, null, null, null, 'Bangladesh', null, '2023-12-04 02:26:17', '2023-12-04 02:26:17');

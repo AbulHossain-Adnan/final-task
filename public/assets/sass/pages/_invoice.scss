@@ -1,0 +1,256 @@
+// Invoice css
+
+.invoice_wrapper {
+    .invoice_productTable {
+        th {
+            border-bottom: 1px solid var(--border-color);
+        }
+        td {
+            padding: 5px 0;
+            border-bottom: 1px solid var(--border-color);
+            &.price,
+            .price {
+                font-weight: 500;
+                color: var(--paragraph-color);
+                strong {
+                    font-weight: 700;
+                    color: var(--heading-color);
+                }
+            }
+        }
+    }
+    .invoice_productSubtotal {
+        table {
+            max-width: 500px;
+            margin-left: auto;
+        }
+        tr {
+            td {
+                font-size: 14px;  
+                color: var(--paragraph-color); 
+                line-height: 20px; 
+                vertical-align: middle; 
+                text-align: left;
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+    }
+    .billing__table {
+        table {
+            tbody {
+                tr:nth-child(even) {
+                    background-color: var(--white-bg);
+                }
+            }
+        }
+    }
+    th {
+        font-size: 14px;  
+        color: var(--heading-color); 
+        font-weight: bold; 
+        line-height: 1; 
+        vertical-align: top; 
+        padding: 0 0 7px; 
+        &:last-child {
+            text-align: right;
+        }
+    }
+    td {
+        font-size: 14px;
+        &:last-child {
+            text-align: right;
+        }
+        strong {
+            font-size: 14px;
+            color: var(--paragraph-color);
+            margin: 10px 0px;
+            display: block;
+            padding: 0;
+            &.color_heading {
+                color: var(--heading-color);
+            }
+        }
+    } 
+    &.style_two {
+        td{
+            font-size: 14px;
+            strong {
+                font-size: 14px;
+                color: var(--paragraph-color);
+                margin: 10px 0px;
+                display: block;
+                padding: 0;
+            }
+            small{
+                font-weight: 600;
+            }
+        }     
+    }
+    &.style_three {
+        th {
+            font-size: 14px;  
+            color: var(--heading-color); 
+            font-weight: bold; 
+            line-height: 1; 
+            vertical-align: top; 
+            padding: 0 0 7px; 
+            &:last-child {
+                text-align: right;
+            }
+        }
+        td {
+            font-size: 14px;
+            &:last-child {
+                text-align: right;
+            }
+            strong {
+                font-size: 14px;
+                color: var(--paragraph-color);
+                margin: 10px 0px;
+                display: block;
+                padding: 0;
+            }
+        }     
+        .billing__table {
+            &__title {
+                font-size: 16px; 
+                line-height: 20px;
+                font-weight: 700; 
+                color: var(--heading-color);
+            }
+            &__para {
+                font-size: 14px; 
+                line-height: 24px;
+                font-weight: 400; 
+                color: var(--paragraph-color);
+            }
+            tr {
+                vertical-align: top;
+                &:not(:last-child) {
+                    padding-bottom: 20px;
+                    td {
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.billing__table {
+    &__title {
+        font-size: 16px; 
+        line-height: 20px;
+        font-weight: 700; 
+        color: var(--heading-color);
+    }
+    &__para {
+        font-size: 14px; 
+        line-height: 24px;
+        font-weight: 400; 
+        color: var(--paragraph-color);
+    }
+}
+
+.invoice_product {
+    min-width: 160px;
+    &__thumb {
+        flex-shrink: 0;
+        max-width: 30px;
+    }
+    &__para {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: var(--main-color-one);
+    }
+}
+
+.invoice_pdfContent {
+    padding-bottom: 20px;
+}
+
+.invoice_table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.card-header {
+    border: 0;
+}
+
+.invoice__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--heading-color);
+    &__medium {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        color: var(--heading-color);
+    }
+    &__small {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        color: var(--heading-color);
+    }
+}
+
+.invoice__para {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--paragraph-color);
+}
+.invoice__logo {
+    margin-bottom: 20px;
+    display: block;
+    img {
+        width: 150px;
+    }
+}
+
+// invoice 3
+.invoice_table {
+    table {
+        border-color: var(--border-color);
+        thead {
+            tr {
+                background-color: var(--search-bg);
+                th {
+                    font-size: 17px;
+                    font-weight: 500;
+                    white-space: nowrap;
+                    padding: 7px;
+                    color: var(--heading-color) !important;
+                    @media #{$xs} {
+                        font-size: 16px;
+                    }
+                    @media #{$vxxs} {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                background-color: var(--white-bg);
+                &:nth-child(even) {
+                    background-color: var(--search-bg);
+                }
+                td {
+                    font-size: 15px;
+                    color: var(--paragraph-color) !important;
+                    @media #{$vxxs} {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

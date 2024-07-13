@@ -1,0 +1,4 @@
+insert into public.customer_addresses (id, customer_id, first_name, last_name, company, address1, address2, city, province, country, zip, phone, name, province_code, country_code, country_name, default, created_at, updated_at)
+values  (1960, 7337114304729, 'Chase', 'Dixon', null, 'Ap #212-7721 Phasellus Avenue', null, 'Telde', null, 'Philippines', 'P8E 7Z8', '+67466991592', 'Chase Dixon', null, 'PH', 'Philippines', true, null, null),
+        (1961, 7337114271961, 'Charles', 'Mueller', null, 'Ap #861-419 Ut Av.', null, 'Vancouver', null, 'Slovenia', '9713', '+38614290982', 'Charles Mueller', null, 'SI', 'Slovenia', true, null, null),
+        (1962, 7337114239193, 'Brady', 'Gilliam', null, '417-3619 Pellentesque. Av.', null, 'Badalona', null, 'Lebanon', '23863', '+9611423258', 'Brady Gilliam', null, 'LB', 'Lebanon', true, null, null);

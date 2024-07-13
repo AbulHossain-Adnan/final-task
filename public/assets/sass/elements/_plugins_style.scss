@@ -1,0 +1,219 @@
+/* Flatpickr Style Css */
+
+.flatpickr-calendar.arrowTop:after {
+    border-bottom-color: var(--white-2);
+}
+
+.flatpickr-calendar.open {
+    background: var(--white-bg);
+    color: var(--paragraph-color);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 20px var(--box-shadow);
+}
+
+.flatpickr-calendar {
+    background-color: var(--white-bg);
+}
+
+.flatpickr-calendar.hasTime .flatpickr-time {
+    border-top: 1px solid var(--white-bg);
+    color: var(--paragraph-color);
+}
+
+.flatpickr-calendar.hasTime .flatpickr-time {
+    border-top: 1px solid var(--white-bg);
+    color: var(--paragraph-color);
+}
+
+.flatpickr-time.time24hr .numInputWrapper {
+    color: var(--paragraph-color);
+}
+
+.numInputWrapper span {
+    position: absolute;
+    right: 0;
+    width: 14px;
+    padding: 0 4px 0 2px;
+    height: 50%;
+    line-height: 50%;
+    opacity: 0;
+    cursor: pointer;
+    border: 1px solid var(--paragraph-color);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: var(--paragraph-color);
+    background: var(--white-2);
+    border-color: var(--white-bg);
+}
+.numInputWrapper span.arrowUp {
+    top: 0;
+    border-bottom: 0;
+    color: var(--paragraph-color);
+}
+.flatpickr-time .numInputWrapper span.arrowDown:after {
+    border-top-color: var(--paragraph-color);
+}
+
+.numInputWrapper span.arrowUp:after {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid var(--paragraph-color);
+    top: 26%;
+}
+
+.flatpickr-time .numInputWrapper span.arrowUp:after {
+    border-bottom-color: var(--paragraph-color);
+}
+
+.flatpickr-time input:hover, .flatpickr-time .flatpickr-am-pm:hover, .flatpickr-time input:focus, .flatpickr-time .flatpickr-am-pm:focus {
+    background: var(--white-2);
+}
+
+.flatpickr-time input {
+    background: transparent;
+    color: var(--paragraph-color);
+}
+
+.flatpickr-time .flatpickr-time-separator, .flatpickr-time .flatpickr-am-pm {
+    color: var(--paragraph-color);
+    width: 5%;
+    min-width: 45px;
+}
+
+.flatpickr-calendar.hasTime .flatpickr-time {
+    border-top: 1px solid var(--white-bg);
+}
+
+.flatpickr-calendar.arrowTop:before {
+    border-bottom-color: var(--white-bg);
+}
+
+/* Sweet Alert Style Css */
+
+.swal2-container.swal2-center>.swal2-popup {
+    background: var(--white-bg) !important;
+}
+
+.swal2-icon.swal2-warning {
+    color: var(--paragraph-color) !important;
+    border-color: var(--border-color-2) !important;
+}
+
+.swal2-title {
+    color: var(--heading-color) !important;
+}
+
+.swal2-html-container {
+    color: var(--paragraph-color) !important;
+}
+
+/* Summer Note css start */
+
+.note-editable {
+    background: var(--white-bg);
+    color: var(--paragraph-color);
+}
+.note-toolbar {
+    color: var(--heading-color);
+    background-color: var(--white-bg);
+    border-bottom: 1px solid;
+    border-color: var(--border-color);
+}
+
+.note-btn {
+    color: var(--heading-color-two);
+    background-color: var(--white-bg);
+    border: 1px solid var(--border-color);
+}
+.note-btn.active, .note-btn:focus, .note-btn:hover {
+    color: var(--heading-color);
+    text-decoration: none;
+    border: 1px solid var(--border-color);
+    background-color: rgba(var(--white-rgb), .1);
+    outline: 0;
+    border-radius: 1px;
+}
+
+.note-dropdown-menu {
+    background: var(--search-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 1px 1px rgba(var(--main-color-one-rgb), .1);
+}
+a.note-dropdown-item {
+    color: var(--heading-color);
+}
+a.note-dropdown-item:hover {
+    background-color: var(--border-color);
+    color: var(--heading-color);
+}
+
+.note-modal-content {
+    border: 1px solid var(--border-color);
+    background: var(--white-bg);
+    box-shadow: 0 3px 9px rgba(var(--white-rgb),.1);
+}
+.note-modal-header {
+    border: 1px solid var(--border-color);
+}
+.note-modal-title {
+    color: var(--heading-color);
+}
+.close {
+    color: var(--heading-color);
+}
+.note-form-label {
+    color: var(--paragraph-color);
+}
+
+.note-modal .note-modal-body label {
+    color: var(--paragraph-color);
+}
+.note-input {
+    @include box-shadow(0, 0, 10px, rgba(var(--white-rgb), .03));
+    background-color: var(--white-bg);
+    border: 1px solid var(--border-color);
+    color: var(--paragraph-color);
+}
+
+.note-editor .note-editing-area .note-editable table td, .note-editor .note-editing-area .note-editable table th {
+    border: 1px solid var(--border-color);
+}
+
+.note-popover {
+    background: var(--white-bg);
+    border: 1px solid var(--border-color);
+}
+
+.note-popover.bottom .note-popover-arrow {
+    top: -11px;
+    left: 20px;
+    margin-left: -10px;
+    border-top-width: 0;
+    border-bottom-color: var(--search-bg);
+    border-bottom-color: rgba(0,0,0,.25)
+}
+
+.note-popover.bottom .note-popover-arrow:after {
+    border-bottom-color: var(--search-bg)
+}
+.help-list-item + label + span {
+    color: var(--paragraph-color);
+}
+.note-editor .note-toolbar .note-color .note-dropdown-menu .note-palette .note-palette-title, .note-popover .popover-content .note-color .note-dropdown-menu .note-palette .note-palette-title {
+    border-bottom: 1px solid var(--border-color);
+    color: var(--paragraph-color);
+}
+.note-editor .note-toolbar .note-color .note-dropdown-menu .note-palette .note-color-reset, .note-editor .note-toolbar .note-color .note-dropdown-menu .note-palette .note-color-select, .note-popover .popover-content .note-color .note-dropdown-menu .note-palette .note-color-reset, .note-popover .popover-content .note-color .note-dropdown-menu .note-palette .note-color-select {
+    background: var(--white-bg);
+    color: var(--paragraph-color);
+    border-color: var(--border-color);
+}
+.note-editor .note-toolbar .note-color .note-dropdown-menu .note-palette .note-color-reset:hover, .note-editor .note-toolbar .note-color .note-dropdown-menu .note-palette .note-color-select:hover, .note-popover .popover-content .note-color .note-dropdown-menu .note-palette .note-color-reset:hover, .note-popover .popover-content .note-color .note-dropdown-menu .note-palette .note-color-select:hover {
+    background: var(--main-color-one);
+}
+
+.note-editor .note-toolbar .note-color .note-dropdown-menu .note-palette .note-holder-custom .note-color-btn, .note-popover .popover-content .note-color .note-dropdown-menu .note-palette .note-holder-custom .note-color-btn {
+    border: 1px solid var(--border-color);
+}
+
+/* Summer Note css end */

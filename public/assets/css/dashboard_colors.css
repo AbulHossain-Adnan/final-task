@@ -1,0 +1,76 @@
+/* Dashboard Colors Css */
+
+
+[data-color="main"]:root {
+    --main-color-one: #0080FF;  /* main color */
+    --main-color-one-rgb: 53, 134, 215 !important;  /* main color rgb */
+    --main-color-two: #0080FF;  /* main color */
+    --main-color-two-rgb: 53, 134, 215 !important;  /* main color rgb */
+    --main-color-three: #0080FF;  /* main color */
+    --main-color-three-rgb: 53, 134, 215 !important;  /* main color rgb */
+}
+[data-color="blue"]:root {
+    --main-color-one: #3586d7;  /* blue color */
+    --main-color-one-rgb: 53, 134, 215 !important;  /* blue color rgb */
+    --main-color-two: #3586d7;  /* blue color */
+    --main-color-two-rgb: 53, 134, 215 !important;  /* blue color rgb */
+    --main-color-three: #3586d7;  /* blue color */
+    --main-color-three-rgb: 53, 134, 215 !important;  /* blue color rgb */
+}
+
+[data-color="purple"]:root {
+    --main-color-one: #8f28cb;  /* purple color */
+    --main-color-one-rgb: 143, 40, 203 !important;  /* purple color rgb */
+    --main-color-two: #8f28cb;  /* purple color */
+    --main-color-two-rgb: 143, 40, 203 !important;  /* purple color rgb */
+    --main-color-three: #8f28cb;  /* purple color */
+    --main-color-three-rgb: 143, 40, 203 !important;  /* purple color rgb */
+}
+
+[data-color="orange"]:root {
+    --main-color-one: #db6a39;  /* orange color */
+    --main-color-one-rgb: 219, 106, 57 !important;  /* orange color rgb */
+    --main-color-two: #db6a39;  /* orange color */
+    --main-color-two-rgb: 219, 106, 57 !important;  /* orange color rgb */
+    --main-color-three: #e36128;  /* orange color */
+    --main-color-three-rgb: 219, 106, 57 !important;  /* orange color rgb */
+}
+
+[data-color="brown"]:root {
+    --main-color-one: #b38b6d;  /* brown color */
+    --main-color-one-rgb: 179,139,109 !important;  /* brown color rgb */
+    --main-color-two: #b38b6d;  /* brown color */
+    --main-color-two-rgb: 179,139,109 !important;  /* brown color rgb */
+    --main-color-three: #b38b6d;  /* brown color */
+    --main-color-three-rgb: 179,139,109 !important;  /* brown color rgb */
+}
+
+[data-color="green"]:root {
+    --main-color-one: #2a7e19;  /* green color */
+    --main-color-one-rgb: 42,126,25 !important;  /* green color rgb */
+    --main-color-two: #2A7E19;  /* green color */
+    --main-color-two-rgb: 42,126,25 !important;  /* green color rgb */
+    --main-color-three: #2A7E19;  /* green color */
+    --main-color-three-rgb: 42,126,25 !important;  /* green color rgb */
+}
+
+[data-color="sky"]:root {
+    --main-color-one: #3ac3db;  /* sky color */
+    --main-color-one-rgb: 58, 195, 219 !important;  /* sky color rgb */
+    --main-color-two: #3ac3db;  /* sky color */
+    --main-color-two-rgb: 58, 195, 219 !important;  /* sky color rgb */
+    --main-color-three: #3ac3db;  /* sky color */
+    --main-color-three-rgb: 58, 195, 219 !important;  /* sky color rgb */
+}
+
+[data-color="pink"]:root {
+    --main-color-one: #dd4994;  /* pink color */
+    --main-color-one-rgb: 221, 73, 148 !important;  /* pink color rgb */
+    --main-color-two: #dd4994;  /* pink color */
+    --main-color-two-rgb: 221, 73, 148 !important;  /* pink color rgb */
+    --main-color-three: #dd4994;  /* pink color */
+    --main-color-three-rgb: 221, 73, 148 !important;  /* pink color rgb */
+}
+
+
+

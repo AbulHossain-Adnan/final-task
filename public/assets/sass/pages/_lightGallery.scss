@@ -1,0 +1,9 @@
+/* Light Gallery css */
+
+.lightGallery_item {
+    img {
+        border: 1px solid var(--border-color);
+        box-shadow: 0 0 10px var(--box-shadow);
+        border-radius: 10px;
+    }
+}

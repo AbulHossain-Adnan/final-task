@@ -1,0 +1,15 @@
+/* Dashboard Copyright */
+
+.dashboard__copyright {
+    background-color: var(--search-bg);
+    padding: 20px;
+    text-align: center;
+    &__contents {
+        &__para {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color: var(--heading-color);
+        }
+    }
+}
