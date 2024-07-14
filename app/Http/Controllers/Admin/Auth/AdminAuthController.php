@@ -3,20 +3,25 @@
 namespace App\Http\Controllers\Admin\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
+use App\Http\Requests\UserResetPasswordRequest;
 use App\Http\Services\RegisterService;
 use App\Models\Admin;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
+use Illuminate\View\View;
 
 class AdminAuthController extends Controller
 {
     use AuthenticatesUsers;
+
     /**
      * Create a new controller instance.
      *
@@ -28,75 +33,66 @@ class AdminAuthController extends Controller
         $this->middleware('guest:admin')->except('logout');
     }
 
-    public function showLoginForm()
+    public function showLoginForm(): View
     {
         return view('admin.auth.login');
     }
 
-    public function showRegistrationForm()
+    public function showRegistrationForm(): View
     {
         return view('admin.auth.register');
     }
 
-    public function register(RegisterRequest $request)
+    public function register(RegisterRequest $request): RedirectResponse
     {
         $response = RegisterService::register($request->validated());
 
         if ($response['status']) {
             return redirect(route('admin.login'))->with($response);
-        }else{
+        } else {
             return back()->with($response);
         }
 
     }
 
-    public function logout(Request $request){
-
+    public function logout(Request $request): RedirectResponse
+    {
         Auth::guard('admin')->logout();
 
         return redirect()->route('admin.login');
     }
 
-    public function login(Request $request)
+    public function login(LoginRequest $request): JsonResponse
     {
-        $this->validate($request, [
-            'email' => 'required|string',
-            'password' => 'required|min:6'
-        ]);
-        $type = 'username';
+        $validated = $request->validated();
+        $credentials = filter_var($validated['email'], FILTER_VALIDATE_EMAIL)
+            ? ['email' => $validated['email']]
+            : ['username' => $validated['email']];
 
-        //check is email or username
-        if (filter_var($request->email,FILTER_VALIDATE_EMAIL))
-        {
-            $type = 'email';
-        }
-        if (Auth::guard('admin')->attempt([ $type => $request->email, 'password' => $request->password], $request->get('remember')))
-        {
+        $credentials['password'] = $validated['password'];
+
+        if (Auth::guard('admin')->attempt($credentials, $request->boolean('remember'))) {
             return response()->json([
                 'msg' => __('Login Success Redirecting'),
                 'type' => 'success',
             ]);
         }
 
-        abort(400,sprintf(__('Your %s or Password Is Wrong !!'),$type));
+        return response()->json([
+            'msg' => sprintf(__('Your %s or Password Is Wrong !!'), key($credentials)),
+            'type' => 'error',
+        ], 400);
     }
 
 
-    public function UserResetPassword(Request $request)
+    public function UserResetPassword(UserResetPasswordRequest $request)
     {
-        $this->validate($request, [
-            'token' => 'required',
-            'username' => 'required',
-            'password' => 'required|string|min:8|confirmed'
-        ]);
-
-
-        $user_info = Admin::where('username', $request->username)->first();
+        $user_info = Admin::where('username', $request->validated('username'))->first();
         $user = Admin::findOrFail($user_info->id);
-        $token_iinfo = DB::table('password_resets')->where(['email' => $user_info->email, 'token' => $request->token])->first();
+        $token_info = DB::table('password_resets')->where(['email' => $user_info->email, 'token' => $request->validated('token')->first()]);
 
         $token_id = Str::random(30);
-        if (empty($token_iinfo)) {
+        if (empty($token_info)) {
 
             DB::table('password_resets')->insert(['email' => $user_info->email, 'token' => $token_id]);
         }
