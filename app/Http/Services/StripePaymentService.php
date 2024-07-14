@@ -17,8 +17,8 @@ class StripePaymentService
         try {
 
             $user = Auth::user();
-
-            Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
+            
+            Stripe\Stripe::setApiKey(config('services.stripe.secret'));
 
             Stripe\Charge::create([
 
