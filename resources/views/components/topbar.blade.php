@@ -38,11 +38,6 @@
                                     <a href="{{route('admin.change.password')}}"
                                        class="dashboard__header__author__wrapper__list__item"><i
                                             class="material-symbols-outlined">lock</i> {{__('Change Password')}}</a>
-                                    <a href="javascript:void(0)" class="dashboard__header__author__wrapper__list__item"><i
-                                            class="material-symbols-outlined">settings</i> Settings</a>
-                                    <a href="javascript:void(0)" class="dashboard__header__author__wrapper__list__item"><i
-                                            class="material-symbols-outlined">logout</i> Log Out</a>
-
                                 </div>
                             </div>
                         </div>
