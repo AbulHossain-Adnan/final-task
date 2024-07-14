@@ -80,9 +80,10 @@
             window.location.reload();
         }).catch(function (error){
             var responseData = error.response.data.errors;
+
             if(responseData === undefined){
-                msgWrap.innerHTML = '<div class="alert alert-danger">'+error.response?.data?.message+'</div>';
-            }
+                const errorMessage = error.response?.data?.message || "The provided credentials do not match our records. Please try again.";
+                msgWrap.innerHTML = `<div class="alert alert-danger">${errorMessage}</div>`;
             var child = '<ul class="alert alert-danger">';
             Object.entries(responseData).forEach(function (value){
                 child += '<li>'+value[1] ?? value+'</li>';

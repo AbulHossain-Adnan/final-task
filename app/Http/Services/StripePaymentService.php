@@ -2,12 +2,9 @@
 
 namespace App\Http\Services;
 
-
-use App\Models\Admin;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use App\Models\PaymentLog;
-use Spatie\Permission\Models\Role;
 use Stripe;
 use Carbon\Carbon;
 
@@ -23,7 +20,7 @@ class StripePaymentService
 
             Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
 
-            Stripe\Charge::create ([
+            Stripe\Charge::create([
 
                 "amount" => 10 * 100,
 
@@ -31,7 +28,7 @@ class StripePaymentService
 
                 "source" => $data['stripeToken'],
 
-                "description" => "Payment for account activation." 
+                "description" => "Payment for account activation."
 
             ]);
 
@@ -47,7 +44,6 @@ class StripePaymentService
             $user->update([
                 'is_authorized' => 1
             ]);
-            
 
             $msg = "Payment Successfully";
             $response = ["msg" => $msg, "type" => "success", "status" => true];
@@ -58,7 +54,6 @@ class StripePaymentService
 
             DB::rollback();
 
-            dd($e->getMessage());
             $response = ["msg" => $e->getMessage(), "type" => "danger", "status" => false];
         }
 
