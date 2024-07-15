@@ -42,10 +42,5 @@ Start the Server
 Packages Included
 
     Laravel Framework ^10.10
-    Laravel Sanctum ^3.2
     Laravel UI ^4.2
-    Spatie DB Dumper ^3.6
-    Spatie Laravel Backup ^8.8
-    Spatie Laravel Permission ^5.11
     Stripe PHP ^15.2
-
